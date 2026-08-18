@@ -12,7 +12,7 @@
 
 <br><br>
 
-<h3><code>kev@github ~ $ cat stack.json</code></h3>
+<h3><code>kev@github ~ $ cat stack.yaml</code></h3>
 
 <img src="./stack.svg" width="860" alt="kev208dev tech stack" />
 
