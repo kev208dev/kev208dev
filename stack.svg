@@ -1,86 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="330" viewBox="0 0 880 330" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="470" viewBox="0 0 880 470" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
 <style>
-  .row { opacity: 0; animation: in .42s ease-out forwards; }
+  .group { opacity: 0; animation: in .42s ease-out forwards; }
   @keyframes in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
-  .pill { fill: #161b22; stroke: #30363d; }
-  .label { fill: #39d353; font-weight: 700; }
+  .panel { fill: #0d1117; stroke: #30363d; }
+  .section { fill: #161b22; stroke: #30363d; }
+  .pill { fill: #21262d; stroke: #30363d; }
+  .title { fill: #39d353; font-weight: 700; }
   .text { fill: #c9d1d9; }
   .muted { fill: #8b949e; }
+  .accent { fill: #69f0a0; }
 </style>
 
-<rect x="0.5" y="0.5" width="879" height="329" rx="12" fill="#0d1117" stroke="#30363d"/>
+<rect x="0.5" y="0.5" width="879" height="469" rx="12" class="panel"/>
 <circle cx="24" cy="24" r="6" fill="#ff5f56"/>
 <circle cx="44" cy="24" r="6" fill="#ffbd2e"/>
 <circle cx="64" cy="24" r="6" fill="#27c93f"/>
-<text x="862" y="29" text-anchor="end" font-size="12" fill="#8b949e">kev@github: ~ $ cat stack.json</text>
+<text x="862" y="29" text-anchor="end" font-size="12" class="muted">kev@github: ~ $ cat stack.yaml</text>
 <line x1="0" y1="44" x2="880" y2="44" stroke="#30363d"/>
 
-<text class="row muted" style="animation-delay:.08s" x="28" y="75" font-size="12">{</text>
+<!-- LEFT / LANGUAGES -->
+<g class="group" style="animation-delay:.08s">
+  <rect x="24" y="64" width="404" height="112" rx="10" class="section"/>
+  <text x="42" y="88" font-size="14" class="title">languages:</text>
 
-<g class="row" style="animation-delay:.16s">
-  <text x="46" y="105" font-size="14" class="label">"languages"</text>
-  <text x="142" y="105" font-size="14" class="muted">:</text>
-  <rect x="162" y="86" width="72" height="28" rx="7" class="pill"/>
-  <text x="198" y="105" text-anchor="middle" font-size="13" class="text">Dart</text>
-  <rect x="244" y="86" width="104" height="28" rx="7" class="pill"/>
-  <text x="296" y="105" text-anchor="middle" font-size="13" class="text">JavaScript</text>
-  <rect x="358" y="86" width="88" height="28" rx="7" class="pill"/>
-  <text x="402" y="105" text-anchor="middle" font-size="13" class="text">Python</text>
-  <rect x="456" y="86" width="54" height="28" rx="7" class="pill"/>
-  <text x="483" y="105" text-anchor="middle" font-size="13" class="text">C</text>
+  <rect x="42" y="100" width="60" height="26" rx="7" class="pill"/><text x="72" y="118" text-anchor="middle" font-size="12" class="text">Dart</text>
+  <rect x="110" y="100" width="64" height="26" rx="7" class="pill"/><text x="142" y="118" text-anchor="middle" font-size="12" class="text">Swift</text>
+  <rect x="182" y="100" width="72" height="26" rx="7" class="pill"/><text x="218" y="118" text-anchor="middle" font-size="12" class="text">Python</text>
+  <rect x="262" y="100" width="42" height="26" rx="7" class="pill"/><text x="283" y="118" text-anchor="middle" font-size="12" class="text">C</text>
+  <rect x="312" y="100" width="48" height="26" rx="7" class="pill"/><text x="336" y="118" text-anchor="middle" font-size="12" class="text">C++</text>
+
+  <rect x="42" y="136" width="100" height="26" rx="7" class="pill"/><text x="92" y="154" text-anchor="middle" font-size="12" class="text">JavaScript</text>
+  <rect x="150" y="136" width="100" height="26" rx="7" class="pill"/><text x="200" y="154" text-anchor="middle" font-size="12" class="text">Visual Basic</text>
+  <rect x="258" y="136" width="52" height="26" rx="7" class="pill"/><text x="284" y="154" text-anchor="middle" font-size="12" class="text">SQL</text>
 </g>
 
-<g class="row" style="animation-delay:.28s">
-  <text x="46" y="153" font-size="14" class="label">"app"</text>
-  <text x="94" y="153" font-size="14" class="muted">:</text>
-  <rect x="114" y="134" width="82" height="28" rx="7" class="pill"/>
-  <text x="155" y="153" text-anchor="middle" font-size="13" class="text">Flutter</text>
-  <rect x="206" y="134" width="92" height="28" rx="7" class="pill"/>
-  <text x="252" y="153" text-anchor="middle" font-size="13" class="text">Riverpod</text>
-  <rect x="308" y="134" width="116" height="28" rx="7" class="pill"/>
-  <text x="366" y="153" text-anchor="middle" font-size="13" class="text">iOS / Android</text>
+<!-- RIGHT / APP WEB -->
+<g class="group" style="animation-delay:.18s">
+  <rect x="452" y="64" width="404" height="112" rx="10" class="section"/>
+  <text x="470" y="88" font-size="14" class="title">app_web:</text>
+
+  <rect x="470" y="100" width="78" height="26" rx="7" class="pill"/><text x="509" y="118" text-anchor="middle" font-size="12" class="text">Flutter</text>
+  <rect x="556" y="100" width="76" height="26" rx="7" class="pill"/><text x="594" y="118" text-anchor="middle" font-size="12" class="text">SwiftUI</text>
+  <rect x="640" y="100" width="80" height="26" rx="7" class="pill"/><text x="680" y="118" text-anchor="middle" font-size="12" class="text">Three.js</text>
+
+  <rect x="470" y="136" width="78" height="26" rx="7" class="pill"/><text x="509" y="154" text-anchor="middle" font-size="12" class="text">Node.js</text>
+  <rect x="556" y="136" width="88" height="26" rx="7" class="pill"/><text x="600" y="154" text-anchor="middle" font-size="12" class="text">Riverpod</text>
+  <rect x="652" y="136" width="94" height="26" rx="7" class="pill"/><text x="699" y="154" text-anchor="middle" font-size="12" class="text">HTML / CSS</text>
 </g>
 
-<g class="row" style="animation-delay:.40s">
-  <text x="46" y="201" font-size="14" class="label">"web"</text>
-  <text x="94" y="201" font-size="14" class="muted">:</text>
-  <rect x="114" y="182" width="86" height="28" rx="7" class="pill"/>
-  <text x="157" y="201" text-anchor="middle" font-size="13" class="text">Three.js</text>
-  <rect x="210" y="182" width="86" height="28" rx="7" class="pill"/>
-  <text x="253" y="201" text-anchor="middle" font-size="13" class="text">Node.js</text>
-  <rect x="306" y="182" width="110" height="28" rx="7" class="pill"/>
-  <text x="361" y="201" text-anchor="middle" font-size="13" class="text">HTML / CSS</text>
+<!-- LEFT / AI ROBOTICS -->
+<g class="group" style="animation-delay:.30s">
+  <rect x="24" y="192" width="404" height="112" rx="10" class="section"/>
+  <text x="42" y="216" font-size="14" class="title">ai_robotics:</text>
+
+  <rect x="42" y="228" width="94" height="26" rx="7" class="pill"/><text x="89" y="246" text-anchor="middle" font-size="12" class="text">Physical AI</text>
+  <rect x="144" y="228" width="112" height="26" rx="7" class="pill"/><text x="200" y="246" text-anchor="middle" font-size="12" class="text">NVIDIA Isaac Sim</text>
+  <rect x="264" y="228" width="138" height="26" rx="7" class="pill"/><text x="333" y="246" text-anchor="middle" font-size="12" class="text">Computer Vision</text>
+
+  <rect x="42" y="264" width="64" height="26" rx="7" class="pill"/><text x="74" y="282" text-anchor="middle" font-size="12" class="text">YOLO</text>
+  <rect x="114" y="264" width="128" height="26" rx="7" class="pill"/><text x="178" y="282" text-anchor="middle" font-size="12" class="text">Machine Learning</text>
 </g>
 
-<g class="row" style="animation-delay:.52s">
-  <text x="466" y="153" font-size="14" class="label">"backend"</text>
-  <text x="546" y="153" font-size="14" class="muted">:</text>
-  <rect x="566" y="134" width="96" height="28" rx="7" class="pill"/>
-  <text x="614" y="153" text-anchor="middle" font-size="13" class="text">Supabase</text>
-  <rect x="672" y="134" width="116" height="28" rx="7" class="pill"/>
-  <text x="730" y="153" text-anchor="middle" font-size="13" class="text">PostgreSQL</text>
+<!-- RIGHT / BACKEND DATA -->
+<g class="group" style="animation-delay:.42s">
+  <rect x="452" y="192" width="404" height="112" rx="10" class="section"/>
+  <text x="470" y="216" font-size="14" class="title">backend_data:</text>
+
+  <rect x="470" y="228" width="92" height="26" rx="7" class="pill"/><text x="516" y="246" text-anchor="middle" font-size="12" class="text">Supabase</text>
+  <rect x="570" y="228" width="108" height="26" rx="7" class="pill"/><text x="624" y="246" text-anchor="middle" font-size="12" class="text">PostgreSQL</text>
+  <rect x="686" y="228" width="94" height="26" rx="7" class="pill"/><text x="733" y="246" text-anchor="middle" font-size="12" class="text">REST APIs</text>
+
+  <rect x="470" y="264" width="130" height="26" rx="7" class="pill"/><text x="535" y="282" text-anchor="middle" font-size="12" class="text">Database Design</text>
+  <rect x="608" y="264" width="110" height="26" rx="7" class="pill"/><text x="663" y="282" text-anchor="middle" font-size="12" class="text">Relational DB</text>
 </g>
 
-<g class="row" style="animation-delay:.64s">
-  <text x="466" y="201" font-size="14" class="label">"ai_ml"</text>
-  <text x="530" y="201" font-size="14" class="muted">:</text>
-  <rect x="550" y="182" width="72" height="28" rx="7" class="pill"/>
-  <text x="586" y="201" text-anchor="middle" font-size="13" class="text">YOLO</text>
-  <rect x="632" y="182" width="156" height="28" rx="7" class="pill"/>
-  <text x="710" y="201" text-anchor="middle" font-size="13" class="text">Computer Vision</text>
+<!-- LEFT / SYSTEMS DEVOPS -->
+<g class="group" style="animation-delay:.54s">
+  <rect x="24" y="320" width="404" height="116" rx="10" class="section"/>
+  <text x="42" y="344" font-size="14" class="title">systems_devops:</text>
+
+  <rect x="42" y="356" width="104" height="26" rx="7" class="pill"/><text x="94" y="374" text-anchor="middle" font-size="12" class="text">Linux / Ubuntu</text>
+  <rect x="154" y="356" width="70" height="26" rx="7" class="pill"/><text x="189" y="374" text-anchor="middle" font-size="12" class="text">Docker</text>
+  <rect x="232" y="356" width="58" height="26" rx="7" class="pill"/><text x="261" y="374" text-anchor="middle" font-size="12" class="text">Git</text>
+  <rect x="298" y="356" width="78" height="26" rx="7" class="pill"/><text x="337" y="374" text-anchor="middle" font-size="12" class="text">GitHub</text>
+
+  <rect x="42" y="392" width="78" height="26" rx="7" class="pill"/><text x="81" y="410" text-anchor="middle" font-size="12" class="text">Railway</text>
+  <rect x="128" y="392" width="70" height="26" rx="7" class="pill"/><text x="163" y="410" text-anchor="middle" font-size="12" class="text">Vercel</text>
+  <rect x="206" y="392" width="92" height="26" rx="7" class="pill"/><text x="252" y="410" text-anchor="middle" font-size="12" class="text">Cloudflare</text>
 </g>
 
-<g class="row" style="animation-delay:.76s">
-  <text x="46" y="249" font-size="14" class="label">"tooling"</text>
-  <text x="118" y="249" font-size="14" class="muted">:</text>
-  <rect x="138" y="230" width="58" height="28" rx="7" class="pill"/>
-  <text x="167" y="249" text-anchor="middle" font-size="13" class="text">Git</text>
-  <rect x="206" y="230" width="80" height="28" rx="7" class="pill"/>
-  <text x="246" y="249" text-anchor="middle" font-size="13" class="text">GitHub</text>
-  <rect x="296" y="230" width="112" height="28" rx="7" class="pill"/>
-  <text x="352" y="249" text-anchor="middle" font-size="13" class="text">REST APIs</text>
+<!-- RIGHT / COMPUTER SCIENCE -->
+<g class="group" style="animation-delay:.66s">
+  <rect x="452" y="320" width="404" height="116" rx="10" class="section"/>
+  <text x="470" y="344" font-size="14" class="title">computer_science:</text>
+
+  <rect x="470" y="356" width="94" height="26" rx="7" class="pill"/><text x="517" y="374" text-anchor="middle" font-size="12" class="text">Algorithms</text>
+  <rect x="572" y="356" width="120" height="26" rx="7" class="pill"/><text x="632" y="374" text-anchor="middle" font-size="12" class="text">Data Structures</text>
+  <rect x="700" y="356" width="54" height="26" rx="7" class="pill"/><text x="727" y="374" text-anchor="middle" font-size="12" class="text">OOP</text>
+
+  <rect x="470" y="392" width="138" height="26" rx="7" class="pill"/><text x="539" y="410" text-anchor="middle" font-size="12" class="text">Operating Systems</text>
 </g>
 
-<text class="row muted" style="animation-delay:.88s" x="28" y="294" font-size="12">}</text>
-<text class="row" style="animation-delay:1s" x="46" y="314" font-size="12" fill="#69f0a0">✓ shipping across mobile, web, backend and AI</text>
+<text class="group accent" style="animation-delay:.82s" x="24" y="458" font-size="12">✓ building across software, AI, robotics, systems and infrastructure</text>
 </svg>
