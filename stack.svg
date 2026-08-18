@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="330" viewBox="0 0 880 330" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+<style>
+  .row { opacity: 0; animation: in .42s ease-out forwards; }
+  @keyframes in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+  .pill { fill: #161b22; stroke: #30363d; }
+  .label { fill: #39d353; font-weight: 700; }
+  .text { fill: #c9d1d9; }
+  .muted { fill: #8b949e; }
+</style>
+
+<rect x="0.5" y="0.5" width="879" height="329" rx="12" fill="#0d1117" stroke="#30363d"/>
+<circle cx="24" cy="24" r="6" fill="#ff5f56"/>
+<circle cx="44" cy="24" r="6" fill="#ffbd2e"/>
+<circle cx="64" cy="24" r="6" fill="#27c93f"/>
+<text x="862" y="29" text-anchor="end" font-size="12" fill="#8b949e">kev@github: ~ $ cat stack.json</text>
+<line x1="0" y1="44" x2="880" y2="44" stroke="#30363d"/>
+
+<text class="row muted" style="animation-delay:.08s" x="28" y="75" font-size="12">{</text>
+
+<g class="row" style="animation-delay:.16s">
+  <text x="46" y="105" font-size="14" class="label">"languages"</text>
+  <text x="142" y="105" font-size="14" class="muted">:</text>
+  <rect x="162" y="86" width="72" height="28" rx="7" class="pill"/>
+  <text x="198" y="105" text-anchor="middle" font-size="13" class="text">Dart</text>
+  <rect x="244" y="86" width="104" height="28" rx="7" class="pill"/>
+  <text x="296" y="105" text-anchor="middle" font-size="13" class="text">JavaScript</text>
+  <rect x="358" y="86" width="88" height="28" rx="7" class="pill"/>
+  <text x="402" y="105" text-anchor="middle" font-size="13" class="text">Python</text>
+  <rect x="456" y="86" width="54" height="28" rx="7" class="pill"/>
+  <text x="483" y="105" text-anchor="middle" font-size="13" class="text">C</text>
+</g>
+
+<g class="row" style="animation-delay:.28s">
+  <text x="46" y="153" font-size="14" class="label">"app"</text>
+  <text x="94" y="153" font-size="14" class="muted">:</text>
+  <rect x="114" y="134" width="82" height="28" rx="7" class="pill"/>
+  <text x="155" y="153" text-anchor="middle" font-size="13" class="text">Flutter</text>
+  <rect x="206" y="134" width="92" height="28" rx="7" class="pill"/>
+  <text x="252" y="153" text-anchor="middle" font-size="13" class="text">Riverpod</text>
+  <rect x="308" y="134" width="116" height="28" rx="7" class="pill"/>
+  <text x="366" y="153" text-anchor="middle" font-size="13" class="text">iOS / Android</text>
+</g>
+
+<g class="row" style="animation-delay:.40s">
+  <text x="46" y="201" font-size="14" class="label">"web"</text>
+  <text x="94" y="201" font-size="14" class="muted">:</text>
+  <rect x="114" y="182" width="86" height="28" rx="7" class="pill"/>
+  <text x="157" y="201" text-anchor="middle" font-size="13" class="text">Three.js</text>
+  <rect x="210" y="182" width="86" height="28" rx="7" class="pill"/>
+  <text x="253" y="201" text-anchor="middle" font-size="13" class="text">Node.js</text>
+  <rect x="306" y="182" width="110" height="28" rx="7" class="pill"/>
+  <text x="361" y="201" text-anchor="middle" font-size="13" class="text">HTML / CSS</text>
+</g>
+
+<g class="row" style="animation-delay:.52s">
+  <text x="466" y="153" font-size="14" class="label">"backend"</text>
+  <text x="546" y="153" font-size="14" class="muted">:</text>
+  <rect x="566" y="134" width="96" height="28" rx="7" class="pill"/>
+  <text x="614" y="153" text-anchor="middle" font-size="13" class="text">Supabase</text>
+  <rect x="672" y="134" width="116" height="28" rx="7" class="pill"/>
+  <text x="730" y="153" text-anchor="middle" font-size="13" class="text">PostgreSQL</text>
+</g>
+
+<g class="row" style="animation-delay:.64s">
+  <text x="466" y="201" font-size="14" class="label">"ai_ml"</text>
+  <text x="530" y="201" font-size="14" class="muted">:</text>
+  <rect x="550" y="182" width="72" height="28" rx="7" class="pill"/>
+  <text x="586" y="201" text-anchor="middle" font-size="13" class="text">YOLO</text>
+  <rect x="632" y="182" width="156" height="28" rx="7" class="pill"/>
+  <text x="710" y="201" text-anchor="middle" font-size="13" class="text">Computer Vision</text>
+</g>
+
+<g class="row" style="animation-delay:.76s">
+  <text x="46" y="249" font-size="14" class="label">"tooling"</text>
+  <text x="118" y="249" font-size="14" class="muted">:</text>
+  <rect x="138" y="230" width="58" height="28" rx="7" class="pill"/>
+  <text x="167" y="249" text-anchor="middle" font-size="13" class="text">Git</text>
+  <rect x="206" y="230" width="80" height="28" rx="7" class="pill"/>
+  <text x="246" y="249" text-anchor="middle" font-size="13" class="text">GitHub</text>
+  <rect x="296" y="230" width="112" height="28" rx="7" class="pill"/>
+  <text x="352" y="249" text-anchor="middle" font-size="13" class="text">REST APIs</text>
+</g>
+
+<text class="row muted" style="animation-delay:.88s" x="28" y="294" font-size="12">}</text>
+<text class="row" style="animation-delay:1s" x="46" y="314" font-size="12" fill="#69f0a0">✓ shipping across mobile, web, backend and AI</text>
+</svg>
