@@ -391,8 +391,9 @@
 <rect class="cell" x="866" y="60" width="13" height="13" rx="3" fill="#0e4429" style="animation-delay:0.972s"><title>2026-08-18: 7</title></rect>
 <rect class="cell" x="866" y="76" width="13" height="13" rx="3" fill="#0e4429" style="animation-delay:0.990s"><title>2026-08-19: 2</title></rect>
 <rect class="cell" x="866" y="92" width="13" height="13" rx="3" fill="#161b22" style="animation-delay:1.008s"><title>2026-08-20: 0</title></rect>
-<rect class="cell" x="866" y="108" width="13" height="13" rx="3" fill="#161b22" style="animation-delay:1.026s"><title>2026-08-21: 0</title></rect>
-<text x="34" y="161" class="fade" style="animation-delay:1.4s">787 contributions in the last year&#160;&#160;·&#160;&#160;streak 0d (best 12d)</text>
+<rect class="cell" x="866" y="108" width="13" height="13" rx="3" fill="#0e4429" style="animation-delay:1.026s"><title>2026-08-21: 1</title></rect>
+<rect class="cell" x="866" y="124" width="13" height="13" rx="3" fill="#161b22" style="animation-delay:1.044s"><title>2026-08-22: 0</title></rect>
+<text x="34" y="161" class="fade" style="animation-delay:1.4s">788 contributions in the last year&#160;&#160;·&#160;&#160;streak 0d (best 12d)</text>
 <text x="669" y="161" class="fade" style="animation-delay:1.4s">Less</text>
 <rect class="fade" style="animation-delay:1.4s" x="705" y="150" width="13" height="13" rx="3" fill="#161b22"/>
 <rect class="fade" style="animation-delay:1.4s" x="721" y="150" width="13" height="13" rx="3" fill="#0e4429"/>
