@@ -116,7 +116,7 @@ def build_svg(data: dict[str, dict[str, int]], today: date) -> str:
         "  @keyframes fade { to { opacity: 1; } }",
         "  text { fill: #8b949e; font-size: 11px; }",
         "</style>",
-        f'<rect width="{WIDTH}" height="{HEIGHT}" rx="8" fill="#0d1117"/>',
+        f'<rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{HEIGHT - 1}" rx="10" fill="#0d1117" stroke="#30363d"/>',
     ]
 
     for x, label in month_labels(start, end):

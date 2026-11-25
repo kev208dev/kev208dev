@@ -6,7 +6,7 @@
   @keyframes fade { to { opacity: 1; } }
   text { fill: #8b949e; font-size: 11px; }
 </style>
-<rect width="891" height="181" rx="8" fill="#0d1117"/>
+<rect x="0.5" y="0.5" width="890" height="180" rx="10" fill="#0d1117" stroke="#30363d"/>
 <text x="50" y="18" class="fade" style="animation-delay:.2s">Dec</text>
 <text x="114" y="18" class="fade" style="animation-delay:.2s">Jan</text>
 <text x="194" y="18" class="fade" style="animation-delay:.2s">Feb</text>
